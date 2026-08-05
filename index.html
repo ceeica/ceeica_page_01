@@ -1,27 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Mi Página</title>
-  <style>
-    body {
-      font-family: system-ui, sans-serif;
-      max-width: 700px;
-      margin: 60px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-      color: #222;
-    }
-    h1 { color: #24292e; }
-    a { color: #0366d6; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CEEICA — Centro de Estudiantes de Acústica UACh</title>
+<meta name="description" content="Sitio oficial de CEEICA, Centro de Estudiantes de Acústica UACh. Actividades, proyectos y redes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hola, soy [tu nombre]</h1>
-  <p>Bienvenido a mi página. Aquí voy a compartir mis proyectos.</p>
-  <ul>
-    <li><a href="#">Proyecto 1</a></li>
-    <li><a href="#">Proyecto 2</a></li>
-  </ul>
+<a href="#main" class="skip-link">Saltar al contenido</a>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <div class="logo-slot">LOGO<br>SVG/PNG</div>
+      <div class="brand-name">CEEICA<span>Centro de Estudiantes de Acústica UACh</span></div>
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="index.html" class="active">Inicio</a>
+      <a href="actividades.html">Actividades</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="redes.html">Redes</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">20Hz — 20kHz</p>
+        <h1>CEEICA</h1>
+        <p class="lead">Centro de Estudiantes de Acústica, Universidad Austral de Chile. Cine, juegos de mesa, tarreos, talleres y proyectos hechos por y para la comunidad de acústica.</p>
+        <div class="btn-row">
+          <a href="redes.html" class="btn btn-solid">Únete al Discord</a>
+          <a href="actividades.html" class="btn btn-outline">Ver actividades</a>
+        </div>
+      </div>
+      <div class="waveform" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Agenda</p>
+        <h2>Actividades</h2>
+        <p>Instancias periódicas para desconectar, compartir y crear comunidad dentro de la carrera.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <span class="tag-line">Semanal</span>
+          <h3>Día de Cine</h3>
+          <p>Votamos, elegimos y vemos una película cada semana. Todo el registro y la próxima función, acá.</p>
+          <a href="actividades.html#cine" class="card-link">Ver detalles →</a>
+        </article>
+        <article class="card">
+          <span class="tag-line">Quincenal</span>
+          <h3>Juegos de Mesa</h3>
+          <p>Tardes de juegos traídos por la misma comunidad. Revisa qué hay disponible y quién lo trae.</p>
+          <a href="actividades.html#juegos" class="card-link">Ver detalles →</a>
+        </article>
+        <article class="card">
+          <span class="tag-line">Mensual</span>
+          <h3>Tarreo</h3>
+          <p>Once/asado informal para cerrar el mes entre compañeros, con juegos de mesa incluidos.</p>
+          <a href="actividades.html#tarreo" class="card-link">Ver detalles →</a>
+        </article>
+        <article class="card">
+          <span class="tag-line">Taller</span>
+          <h3>Sound Design</h3>
+          <p>Introducción práctica al diseño sonoro para videojuegos, cine y medios interactivos.</p>
+          <a href="actividades.html#sound-design" class="card-link">Ver detalles →</a>
+        </article>
+        <article class="card">
+          <span class="tag-line">Taller</span>
+          <h3>Pedales</h3>
+          <p>Cadena de señal, efectos y modding básico de pedales para guitarra y bajo.</p>
+          <a href="actividades.html#pedales" class="card-link">Ver detalles →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">En desarrollo</p>
+        <h2>Proyectos</h2>
+        <p>Lo que estamos construyendo como centro más allá de la agenda semanal.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <span class="tag-line">Merch</span>
+          <h3>Merch CEEICA</h3>
+          <p>Poleras, parches y stickers con identidad del centro. Diseños y preventa próximamente.</p>
+          <a href="proyectos.html#merch" class="card-link">Ver detalles →</a>
+        </article>
+        <article class="card">
+          <span class="tag-line">Podcast</span>
+          <h3>Radio CEEICA</h3>
+          <p>Programa hecho por estudiantes: acústica, música y vida universitaria, capítulo a capítulo.</p>
+          <a href="proyectos.html#radio" class="card-link">Ver detalles →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Comunidad</p>
+        <h2>Síguenos</h2>
+        <p>Toda la difusión y coordinación de actividades pasa primero por estos canales.</p>
+      </div>
+      <a href="redes.html" class="btn btn-solid">Ir a redes sociales</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="brand-name">CEEICA<span>Centro de Estudiantes de Acústica UACh</span></div>
+      <div class="footer-links">
+        <a href="redes.html">Instagram</a>
+        <a href="redes.html">Discord</a>
+        <a href="redes.html">Whatsapp</a>
+      </div>
+    </div>
+    <p class="footer-note">© 2026 CEEICA — Sitio hecho por y para la comunidad de Acústica UACh.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
