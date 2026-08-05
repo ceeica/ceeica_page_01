@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Actividades — CEEICA</title>
+<meta name="description" content="Día de Cine, Juegos de Mesa, Tarreo y talleres de CEEICA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Saltar al contenido</a>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <div class="logo-slot">LOGO<br>SVG/PNG</div>
+      <div class="brand-name">CEEICA<span>Centro de Estudiantes de Acústica UACh</span></div>
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="actividades.html" class="active">Actividades</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="redes.html">Redes</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero" style="padding:64px 0 40px;">
+    <div class="wrap">
+      <p class="eyebrow">Agenda del centro</p>
+      <h1 style="font-size:clamp(2.2rem,5vw,3.2rem);">Actividades</h1>
+      <p class="lead">Todo lo que organizamos de manera periódica. Edita las fechas, lugares y listas directamente en este HTML.</p>
+    </div>
+  </section>
+
+  <!-- ============ DÍA DE CINE ============ -->
+  <section class="activity-block" id="cine">
+    <div class="wrap activity-body">
+      <div class="activity-head">
+        <h2>Día de Cine</h2>
+        <span class="freq-tag">80Hz — grave, constante</span>
+      </div>
+      <p>Club de cine del centro: cada semana vemos una película elegida entre todos. Cualquiera puede proponer un título en el canal de Discord; se abre una votación de 48 horas y gana la más votada. Contenido +18 se anuncia con anticipación para que cada quien decida si asistir.</p>
+      <p>Para participar: únete al canal <strong>#dia-de-cine</strong> en nuestro <a href="redes.html" style="text-decoration:underline;">Discord</a> y postula o vota tu película de la semana.</p>
+
+      <div class="info-box">
+        <div class="item"><span>Fecha</span><strong>Todos los viernes</strong></div>
+        <div class="item"><span>Horario</span><strong>20:00 hrs</strong></div>
+        <div class="item"><span>Lugar</span><strong>Sala Multiuso, Ed. Acústica</strong></div>
+      </div>
+
+      <h3 style="font-family:var(--font-display);font-size:18px;margin-bottom:4px;">Próxima película</h3>
+      <div class="next-movie">
+        <div class="cover-art">COVER<br>PLACEHOLDER</div>
+        <div>
+          <p style="font-weight:700;font-size:17px;margin-bottom:2px;">Ejemplo: "Dune: Parte Dos"</p>
+          <p class="meta">Propuesta por: Camila R. · Votación cerrada el jueves</p>
+        </div>
+      </div>
+
+      <h3 style="font-family:var(--font-display);font-size:18px;margin:32px 0 4px;">Registro de películas vistas</h3>
+      <div class="cover-grid">
+        <div class="cover-card">
+          <div class="cover-art">COVER</div>
+          <p>Parasite</p>
+          <p class="meta">14 mar 2026</p>
+        </div>
+        <div class="cover-card">
+          <div class="cover-art">COVER</div>
+          <p>Blade Runner 2049</p>
+          <p class="meta">21 mar 2026</p>
+        </div>
+        <div class="cover-card">
+          <div class="cover-art">COVER</div>
+          <p>Whiplash</p>
+          <p class="meta">28 mar 2026</p>
+        </div>
+        <div class="cover-card">
+          <div class="cover-art">COVER</div>
+          <p>La La Land</p>
+          <p class="meta">4 abr 2026</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JUEGOS DE MESA ============ -->
+  <section class="activity-block" id="juegos">
+    <div class="wrap activity-body">
+      <div class="activity-head">
+        <h2>Juegos de Mesa</h2>
+        <span class="freq-tag">250Hz — medio</span>
+      </div>
+      <p>Tardes de juegos de mesa abiertas a todo el centro. Los juegos son traídos por miembros de la comunidad: si tienes uno y quieres compartirlo, avisa en el canal de Discord y lo sumamos a la lista.</p>
+
+      <div class="info-box">
+        <div class="item"><span>Fecha</span><strong>Cada 2 sábados</strong></div>
+        <div class="item"><span>Horario</span><strong>16:00 hrs</strong></div>
+        <div class="item"><span>Lugar</span><strong>Sala de Estar CEEICA</strong></div>
+      </div>
+
+      <h3 style="font-family:var(--font-display);font-size:18px;margin-bottom:4px;">Juegos disponibles</h3>
+      <ul class="owner-list">
+        <li><span class="game-name">Catan</span><span class="owner">Juan Pérez</span></li>
+        <li><span class="game-name">Bang!</span><span class="owner">María González</span></li>
+        <li><span class="game-name">Sushi Go!</span><span class="owner">Tomás Iturra</span></li>
+        <li><span class="game-name">Dixit</span><span class="owner">Centro (bodega CEEICA)</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ TARREO ============ -->
+  <section class="activity-block" id="tarreo">
+    <div class="wrap activity-body">
+      <div class="activity-head">
+        <h2>Tarreo</h2>
+        <span class="freq-tag">800Hz — presencia</span>
+      </div>
+      <p>Once o asado informal para cerrar el mes. Es la instancia más relajada del centro: buena comida, música y espacio para conocer gente de otros años.</p>
+
+      <div class="info-box">
+        <div class="item"><span>Fecha</span><strong>Último viernes del mes</strong></div>
+        <div class="item"><span>Horario</span><strong>18:30 hrs</strong></div>
+        <div class="item"><span>Lugar</span><strong>Patio Central, Campus Miraflores</strong></div>
+      </div>
+
+      <h3 style="font-family:var(--font-display);font-size:18px;margin-bottom:4px;">Juegos en mesa</h3>
+      <ul class="owner-list">
+        <li><span class="game-name">Naipe / Cacho</span><span class="owner">Rotativo</span></li>
+        <li><span class="game-name">Jenga</span><span class="owner">Centro (bodega CEEICA)</span></li>
+        <li><span class="game-name">Uno</span><span class="owner">Fernanda Soto</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ TALLER SOUND DESIGN ============ -->
+  <section class="activity-block" id="sound-design">
+    <div class="wrap activity-body">
+      <div class="activity-head">
+        <h2>Taller de Sound Design</h2>
+        <span class="freq-tag">3kHz — nitidez</span>
+      </div>
+      <p>Taller práctico e introductorio de diseño sonoro para videojuegos, cine y medios interactivos: creación de efectos, capas, edición y flujo de trabajo básico en DAW. Cupos limitados, se avisa fecha e inscripción por Discord.</p>
+      <div class="info-box">
+        <div class="item"><span>Modalidad</span><strong>Presencial</strong></div>
+        <div class="item"><span>Cupos</span><strong>Limitados</strong></div>
+        <div class="item"><span>Inscripción</span><strong>Vía Discord</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TALLER PEDALES ============ -->
+  <section class="activity-block" id="pedales">
+    <div class="wrap activity-body">
+      <div class="activity-head">
+        <h2>Taller de Pedales</h2>
+        <span class="freq-tag">8kHz — brillo</span>
+      </div>
+      <p>Taller sobre efectos de pedales para guitarra y bajo: cadena de señal, tipos de efectos y modding básico. Ideal para quienes quieren entender qué pasa dentro de la caja antes de armar su propio pedalboard.</p>
+      <div class="info-box">
+        <div class="item"><span>Modalidad</span><strong>Presencial</strong></div>
+        <div class="item"><span>Cupos</span><strong>Limitados</strong></div>
+        <div class="item"><span>Inscripción</span><strong>Vía Discord</strong></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="brand-name">CEEICA<span>Centro de Estudiantes de Acústica UACh</span></div>
+      <div class="footer-links">
+        <a href="redes.html">Instagram</a>
+        <a href="redes.html">Discord</a>
+        <a href="redes.html">Whatsapp</a>
+      </div>
+    </div>
+    <p class="footer-note">© 2026 CEEICA — Sitio hecho por y para la comunidad de Acústica UACh.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
