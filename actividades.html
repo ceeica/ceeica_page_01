@@ -37,7 +37,7 @@
     <div class="wrap">
       <p class="eyebrow">Agenda del centro</p>
       <h1 style="font-size:clamp(2.2rem,5vw,3.2rem);">Actividades</h1>
-      <p class="lead">Todo lo que organizamos de manera periódica. Edita las fechas, lugares y listas directamente en este HTML.</p>
+      <p class="lead">Todo lo que organizamos de manera periódica.</p>
     </div>
   </section>
 
@@ -51,44 +51,38 @@
       <p>Club de cine de Acústica: cada semana vemos una película elegida por ruleta o votación. Cualquiera puede proponer un título por el canal de Discord o Whatsapp.</p>
       <p>Únete al canal <strong>#acus-cine</strong> en nuestro <a href="redes.html" style="text-decoration:underline;">Discord</a> y postula y vota por la película de la semana.</p>
 
-      <div class="info-box">
-        <div class="item"><span>Fecha</span><strong>Todos los Viernes</strong></div>
-        <div class="item"><span>Horario</span><strong>20:00 hrs</strong></div>
-        <div class="item"><span>Lugar</span><strong>Auditorio Edificio 9k</strong></div>
-      </div>
-
-      <h3 style="font-family:var(--font-display);font-size:18px;margin-bottom:4px;">Próxima película</h3>
-      <div class="next-movie">
-        <div class="cover-art">COVER<br>PLACEHOLDER</div>
-        <div>
-          <p style="font-weight:700;font-size:17px;margin-bottom:2px;">Ejemplo: "Dune: Parte Dos"</p>
-          <p class="meta">Propuesta por: Camila R. · Votación cerrada el jueves</p>
+      <!-- BLOQUE FUSIONADO: datos fijos arriba + próxima película abajo
+           data-tmdb-id : ID numérico de TMDB (themoviedb.org/movie/XXXXXXX)
+           data-by      : quién la propuso
+           data-date    : texto libre, se muestra debajo de los datos de la película -->
+      <div class="cine-block" data-next-movie
+           data-tmdb-id="1083381"
+           data-by="Camila R."
+           data-date="Viernes 14 ago · 16:00">
+        <div class="cine-header">
+          <h2>Próxima película</h2>
+          <div class="cine-meta"><span>Fecha</span><strong>Viernes 14/08</strong></div>
+          <div class="cine-meta"><span>Horario</span><strong>16:00 hrs</strong></div>
+          <div class="cine-meta"><span>Lugar</span><strong>Auditorio Edificio 9k</strong></div>
+        </div>
+        <div class="cine-movie">
+          <div class="next-cover cover-art">Cargando…</div>
+          <div class="next-info"></div>
         </div>
       </div>
 
-      <h3 style="font-family:var(--font-display);font-size:18px;margin:32px 0 4px;">Registro de películas vistas</h3>
-      <div class="cover-grid">
-        <div class="cover-card">
-          <div class="cover-art">COVER</div>
-          <p>Parasite</p>
-          <p class="meta">14 mar 2026</p>
-        </div>
-        <div class="cover-card">
-          <div class="cover-art">COVER</div>
-          <p>Blade Runner 2049</p>
-          <p class="meta">21 mar 2026</p>
-        </div>
-        <div class="cover-card">
-          <div class="cover-art">COVER</div>
-          <p>Whiplash</p>
-          <p class="meta">28 mar 2026</p>
-        </div>
-        <div class="cover-card">
-          <div class="cover-art">COVER</div>
-          <p>La La Land</p>
-          <p class="meta">4 abr 2026</p>
-        </div>
+      <!-- REGISTRO DE PELÍCULAS VISTAS
+           Para agregar una película nueva:
+           copia una línea .cover-card y pon el ID de TMDB y la fecha.
+           El ID lo encuentras en themoviedb.org/movie/XXXXXX -->
+      <h3 class="section-label" style="margin-top:32px;">Registro de películas vistas</h3>
+      <div class="cover-grid" id="movie-grid">
+        <div class="cover-card" data-tmdb-id="496243" data-date="14 mar 2026"></div><!-- Parasite -->
+        <div class="cover-card" data-tmdb-id="335984" data-date="21 mar 2026"></div><!-- Blade Runner 2049 -->
+        <div class="cover-card" data-tmdb-id="244786" data-date="28 mar 2026"></div><!-- Whiplash -->
+        <div class="cover-card" data-tmdb-id="313369" data-date="4 abr 2026"></div><!-- La La Land -->
       </div>
+
     </div>
   </section>
 
@@ -100,14 +94,12 @@
         <span class="freq-tag">250Hz — medio</span>
       </div>
       <p>Tardes de juegos de mesa abiertas a todo el centro. Los juegos son traídos por miembros de la comunidad: si tienes uno y quieres compartirlo, avisa en el canal de Discord y lo sumamos a la lista.</p>
-
       <div class="info-box">
         <div class="item"><span>Fecha</span><strong>Cada 2 sábados</strong></div>
         <div class="item"><span>Horario</span><strong>16:00 hrs</strong></div>
         <div class="item"><span>Lugar</span><strong>Sala de Estar CEEICA</strong></div>
       </div>
-
-      <h3 style="font-family:var(--font-display);font-size:18px;margin-bottom:4px;">Juegos disponibles</h3>
+      <h3 class="section-label">Juegos disponibles</h3>
       <ul class="owner-list">
         <li><span class="game-name">Catan</span><span class="owner">Juan Pérez</span></li>
         <li><span class="game-name">Bang!</span><span class="owner">María González</span></li>
@@ -125,14 +117,12 @@
         <span class="freq-tag">800Hz — presencia</span>
       </div>
       <p>Once o asado informal para cerrar el mes. Es la instancia más relajada del centro: buena comida, música y espacio para conocer gente de otros años.</p>
-
       <div class="info-box">
         <div class="item"><span>Fecha</span><strong>Último viernes del mes</strong></div>
         <div class="item"><span>Horario</span><strong>18:30 hrs</strong></div>
         <div class="item"><span>Lugar</span><strong>Patio Central, Campus Miraflores</strong></div>
       </div>
-
-      <h3 style="font-family:var(--font-display);font-size:18px;margin-bottom:4px;">Juegos en mesa</h3>
+      <h3 class="section-label">Juegos en mesa</h3>
       <ul class="owner-list">
         <li><span class="game-name">Naipe / Cacho</span><span class="owner">Rotativo</span></li>
         <li><span class="game-name">Jenga</span><span class="owner">Centro (bodega CEEICA)</span></li>
@@ -174,6 +164,17 @@
   </section>
 
 </main>
+
+<!-- MODAL — generado por JS, siempre al final del body -->
+<div id="movie-modal" class="modal-overlay" aria-modal="true" role="dialog" aria-label="Detalle de película" hidden>
+  <div class="modal-box">
+    <button class="modal-close" aria-label="Cerrar">✕</button>
+    <div class="modal-inner">
+      <div class="modal-poster"><div class="cover-art">Cargando…</div></div>
+      <div class="modal-info"></div>
+    </div>
+  </div>
+</div>
 
 <footer class="site-footer">
   <div class="wrap">
